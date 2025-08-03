@@ -1,0 +1,73 @@
+@charset"utf-8"; 
+
+:root{  
+    // --sidebar-width: 260px;
+    // --sidebar-section-margin-top: 1.25rem;
+    // --sidebar-section-first-margin-top: .5rem;
+    // --sidebar-rail-width: calc(var(--spacing) * 13);
+    
+  //컬러 시스템
+    --white: #fff;
+    --black: #000;
+    --gray-50: #f9f9f9;
+    --gray-100: #ececec;
+    --gray-200: #e3e3e3;
+    --gray-300: #cdcdcd;
+    --gray-400: #b4b4b4;
+    --gray-500: #9b9b9b;
+    --gray-600: #676767;
+    --gray-700: #424242;
+    --gray-750: #2f2f2f;
+    --gray-800: #212121;
+    --gray-900: #171717;
+    --gray-950: #0d0d0d;
+    --red-500: #e02e2a;
+    --red-700: #911e1b;
+    --brand-purple: #ab68ff;
+    --yellow-900: #4d3b00;
+
+
+
+
+  //그레이
+  --bk00:#1A1A1A; 
+  --bk01: #111827 ; //#2d2d2d   rgb(4, 17, 29);rgb(22, 32, 41)#1c1d1d; #333333
+  --bk01-1:#333738; // 242728
+  //--bk01:#202020;
+  --bk02:#272727; // #374151  #666666
+  --bk03:#8f929c; //#646d75
+  --bk04:#ccc;  //  rgb(178, 178, 178); 
+  --bk05:#dddddd; //#ddd  rgb(241,243,243)
+  --bk06:#f4f4f4; //#ddd
+
+  --bk-a04:rgba(42, 38, 38, 0.04);
+  --bk-a1:#f1f1f1;
+  //--bk-blue:#36312C; //565B60
+  
+  --gy01:#fafafa; 
+  --gy02:rgb(238, 238, 238); 
+  --gy03:#E7ECF2; // rgb(237, 237, 237)
+  --gy04:rgb(244, 244, 244);
+
+  //--grn: rgb(12, 150, 69); 
+  --sky:#88D1E0 !important;
+  --mint: #5bb0bb !important;
+  --c-cyan: #3AADEF  !important; //   60b3d3  4EB9F8  4AAEE1  #58AEE8
+  --c-cyan-deep: #0999EC !important;
+  --mint-light: #dff1f3 !important;
+  --mint-dark: #3b94a0 !important;
+  // --pink:#dc8993;rgb(241, 142, 174)
+  --pink:rgb(241, 142, 174) !important ;
+  
+  --pink-light: #fff0f2;
+  --pink-medium: #e88e9a;
+  //--pink-btn: #ee9daf;  // rgb(8, 7, 7) ;
+  --pink-btn: #ffafc0; // rgb(8, 7, 7) ;
+  --pink-btn-hov:#ee9daf;//ee9daf
+  --pink-dark:#b56c87;
+
+
+
+
+}
+

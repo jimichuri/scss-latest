@@ -1,0 +1,92 @@
+
+//변수정의
+$width-wide: 1700px;
+$width-branch: 1010px;
+
+
+//extend정의
+%mxwh-pdlR2{
+	margin: auto;
+	max-width: 1440px;
+	display: block;
+	padding: 0 1rem;
+}
+
+%width-wd{
+	width: 128rem;
+  margin: auto;
+  margin-top: 20px;
+	// border:1px solid red;
+}
+
+%width-md{
+	width: 108rem;
+  margin: auto;
+  margin-top: 20px;
+	// background: red;
+}
+
+
+
+//믹스인정의
+@mixin contents{
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	margin: auto;
+	border:1px solid red;
+}
+
+
+@mixin button_md {
+	  // height: 3.8rem;
+    border-radius: .6rem;
+    font-size: 1.45rem !important;
+    padding: .8rem 2.2rem;
+    display: inline-block;
+    font-family: "NotoKr_medium";
+    font-weight: 600;
+    letter-spacing: -.09rem;
+		background: #dbdbdb;		
+}
+
+
+
+@mixin grid($cols, $mgn){
+	margin-right:$mgn;margin-bottom:$mgn;
+	// width:((100% - (($cols - 1) * $mgn))/ $cols); - 미지원
+	width:math.div(100% - (($cols - 1) * $pdr), $cols); //대체
+	&:nth-child(#{$cols}n){
+		margin-right:0;
+	}
+}
+
+
+@mixin grid-p($cols, $pdr){
+	padding-right:$pdr;
+	// display: flex;
+}
+
+
+// @debug math.div(1, 2); // 0.5
+// @debug math.div(100px, 5px); // 20
+// @debug math.div(100px, 5); // 20px
+// @debug math.div(100px, 5s); // 20px/s
+
+
+
+
+@mixin maxWidth($max){
+	@media screen and (max-width:$max){
+		 @content;
+	}
+}
+
+
+@mixin minWidth($min){
+	@media screen and (min-width:$min){
+		 @content;
+	}
+}
+
+
