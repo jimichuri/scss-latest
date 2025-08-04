@@ -1,92 +1,43 @@
+:root {
+  /* 배경 시스템 (bg 접두사) */
+  --bg-body: #171616;
+  --bg-sidebar: #1E1E1E;
+  --bg-card: #2D2D2D;
 
-//변수정의
-$width-wide: 1700px;
-$width-branch: 1010px;
+  /* 텍스트 시스템 (txt 접두사) */
+  --txt-200: #F0F0F0;  /* 강조 텍스트, 하이라이트 */
+  --txt-300: #E8E8E8;  /* 제목용 텍스트 */
+  --txt-400: #C3C3C3;  /* 기본 텍스트 색상 */
+  --txt-500: #999999;  /* 보조 텍스트, 아이콘 */
+  --txt-600: #777777;  /* 플레이스홀더 텍스트 */
+  --txt-700: #666666;  /* 비활성화된 텍스트 */
 
-
-//extend정의
-%mxwh-pdlR2{
-	margin: auto;
-	max-width: 1440px;
-	display: block;
-	padding: 0 1rem;
+  /* 그 외 시스템 */
+  --accent: #E91E63;
+  --error: #FF5252;
 }
 
-%width-wd{
-	width: 128rem;
-  margin: auto;
-  margin-top: 20px;
-	// border:1px solid red;
+/* 변수 활용 예시 */
+body {
+  background-color: var(--bg-body);
+  color: var(--txt-400); /* 기본 텍스트 색상 */
 }
 
-%width-md{
-	width: 108rem;
-  margin: auto;
-  margin-top: 20px;
-	// background: red;
+h1, h2 {
+  color: var(--txt-300); /* 제목용 텍스트 */
 }
 
-
-
-//믹스인정의
-@mixin contents{
-	display: flex;
-	justify-content: center;
-	align-items: top;
-	margin: auto;
-	border:1px solid red;
+p {
+  color: var(--txt-400);
 }
 
-
-@mixin button_md {
-	  // height: 3.8rem;
-    border-radius: .6rem;
-    font-size: 1.45rem !important;
-    padding: .8rem 2.2rem;
-    display: inline-block;
-    font-family: "NotoKr_medium";
-    font-weight: 600;
-    letter-spacing: -.09rem;
-		background: #dbdbdb;		
+.subtle-text {
+  color: var(--txt-500); /* 보조 텍스트 */
 }
 
-
-
-@mixin grid($cols, $mgn){
-	margin-right:$mgn;margin-bottom:$mgn;
-	// width:((100% - (($cols - 1) * $mgn))/ $cols); - 미지원
-	width:math.div(100% - (($cols - 1) * $pdr), $cols); //대체
-	&:nth-child(#{$cols}n){
-		margin-right:0;
-	}
+input::placeholder {
+  color: var(--txt-600);
 }
 
-
-@mixin grid-p($cols, $pdr){
-	padding-right:$pdr;
-	// display: flex;
-}
-
-
-// @debug math.div(1, 2); // 0.5
-// @debug math.div(100px, 5px); // 20
-// @debug math.div(100px, 5); // 20px
-// @debug math.div(100px, 5s); // 20px/s
-
-
-
-
-@mixin maxWidth($max){
-	@media screen and (max-width:$max){
-		 @content;
-	}
-}
-
-
-@mixin minWidth($min){
-	@media screen and (min-width:$min){
-		 @content;
-	}
-}
-
-
+.disabled-button {
+  color: var(--txt-700);
