@@ -1,0 +1,33 @@
+:root {
+  // 핵심 색상
+  --color-pink-primary: #ffafc0;
+  --color-pink-primary-hover: #ee9daf;
+
+  // 밝기 단계별 색상
+  --color-pink-100: #fff0f2;
+  --color-pink-200: #e88e9a;
+  --color-pink-300: rgb(241, 142, 174);
+  --color-pink-400: #b56c87;
+}
+
+[class *="_l"] { font-weight: 300 !important; }
+[class *="_r"] { font-weight: 400 !important; }
+[class *="_m"] { font-weight: 500 !important; }
+[class *="_b"] { font-weight: 700 !important; }
+[class *="_bk"] { font-weight: 900 !important; }
+
+
+// 행간
+[class *="_4515ln"] { line-height: calc(4.5rem * 1.5) !important; }
+[class *="_4015ln"] { line-height: calc(4rem * 1.5) !important; }
+[class *="_3615ln"] { line-height: calc(3.6rem * 1.5) !important; }
+[class *="_3015ln"] { line-height: calc(3rem * 1.5) !important; }
+[class *="_2415ln"] { line-height: calc(2.4rem * 1.5) !important; }
+[class *="_2215ln"] { line-height: calc(2.2rem * 1.5) !important; }
+[class *="_2015ln"] { line-height: calc(2rem * 1.5) !important; }
+[class *="_1815ln"] { line-height: calc(1.8rem * 1.5) !important; }
+[class *="_1615ln"] { line-height: calc(1.6rem * 1.5) !important; }
+[class *="_1415ln"] { line-height: calc(1.4rem * 1.5) !important; }
+[class *="_1215ln"] { line-height: calc(1.2rem * 1.5) !important; }
+[class *="_1115ln"] { line-height: calc(1.1rem * 1.5) !important; }
+[class *="_1015ln"] { line-height: calc(0.8rem * 1.5) !important; }
