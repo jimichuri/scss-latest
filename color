@@ -31,3 +31,19 @@
 [class *="_1215ln"] { line-height: calc(1.2rem * 1.5) !important; }
 [class *="_1115ln"] { line-height: calc(1.1rem * 1.5) !important; }
 [class *="_1015ln"] { line-height: calc(0.8rem * 1.5) !important; }
+
+// 기본 버튼 스타일
+.button {
+  padding: $padding-base;
+  border: 1px solid #ccc;
+}
+
+// 큰 버튼 스타일
+.button--large {
+  padding: $padding-large;
+}
+
+// 작은 버튼 스타일
+.button--small {
+  padding: $padding-small;
+}
