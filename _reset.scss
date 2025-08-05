@@ -817,4 +817,11 @@ button:disabled:hover {
     color: inherit !important;
     ;
     /* 호버 시 글자 색상 변하지 않도록 설정 */
+
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
